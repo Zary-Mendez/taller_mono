@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,55 +7,58 @@
     <title>Registrar Ingreso</title>
 </head>
 
-<body>
+<body name="formRegistro">
+    <fieldset>
     <form id="formRegistroSalas" name="formRegistroSalas" action="index.php?c=registros&a=ControllerGuardarRegistroSalas" method="POST">
 
-        <label for="dia">Seleccione un día:</label>
-        <select id="dia" name="dia">
-            <option value="Lunes">Lunes</option>
-            <option value="Martes">Martes</option>
-            <option value="Miercoles">Miércoles</option>
-            <option value="Jueves">Jueves</option>
-            <option value="Viernes">Viernes</option>
-            <option value="Sábado">Sábado</option>
-        </select>
+<label for="dia">Seleccione un día:</label>
+<select id="dia" name="dia">
+    <option value="Lunes">Lunes</option>
+    <option value="Martes">Martes</option>
+    <option value="Miercoles">Miércoles</option>
+    <option value="Jueves">Jueves</option>
+    <option value="Viernes">Viernes</option>
+    <option value="Sábado">Sábado</option>
+</select>
 
-        <br>
-        <br>
+<br>
+<br>
 
-        <label>Ingrese materia:</label>
-        <input id="materiaCurso" name="materiaCurso" type="text" placeholder="Ingrese materia" required>
+<label>Ingrese materia:</label>
+<input id="materiaCurso" name="materiaCurso" type="text" placeholder="Ingrese materia" required>
 
-        <br>
-        <br>
+<br>
+<br>
 
-        <label>Ingrese hora de inicio:</label>
-        <input id="horaInicioCurso" name="horaInicioCurso" type="time" placeholder="Ingrese hora de inicio" required>
+<label>Ingrese hora de inicio:</label>
+<input id="horaInicioCurso" name="horaInicioCurso" type="time" placeholder="Ingrese hora de inicio" required>
 
-        <br>
-        <br>
+<br>
+<br>
 
-        <label>Ingrese hora de salida:</label>
-        <input id="horaFinCurso" name="horaFinCurso" type="time" placeholder="Ingrese hora de salida" required>
+<label>Ingrese hora de salida:</label>
+<input id="horaFinCurso" name="horaFinCurso" type="time" placeholder="Ingrese hora de salida" required>
 
-        <br>
-        <br>
+<br>
+<br>
 
-        <label>Ingrese programa:</label>
-        <input id="programaCurso" name="programaCurso" type="text" placeholder="Ingrese programa" required>
+<label>Ingrese programa:</label>
+<input id="programaCurso" name="programaCurso" type="text" placeholder="Ingrese programa" required>
 
-        <br>
-        <br>
+<br>
+<br>
 
-        <label>Ingrese sala:</label>
-        <input id="salaCurso" name="salaCurso" type="text" placeholder="Ingrese sala a apartar" required>
+<label>Ingrese sala:</label>
+<input id="salaCurso" name="salaCurso" type="text" placeholder="Ingrese sala a apartar" required>
 
-        <br>
-        <br>
-        <button type="submit">Registrar</button>
-    </form>
+<br>
+<br>
+<button type="submit">Registrar</button>
+</form>
 
 
+    </fieldset>
+   
 </body>
 
 <link rel="stylesheet" href="public/estilos.css">

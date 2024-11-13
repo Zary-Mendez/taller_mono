@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro UDB</title>
+    <title>Registro Salas</title>
     <link rel="stylesheet" href="public/estilos.css">
 </head>
 
 <body>
+    <h1>INGRESO SALAS DE COMPUTO</h1>
     <div class="cuadro">
-        <div class="btn-container">
-            <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerIngreso">Registrar ingreso (Estudiante)</a></button>
-            <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerSalidas">Registrar salida (Estudiante)</a></button>
-            <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerRegistrosSalas">Registrar clase (Docente)</a></button>
-            <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerGetRegistros">Ver registros y salidas</a></button>
-        </div>
+
+            <div class="btn-container">
+                <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerIngreso">Registrar ingreso Estudiante</a></button>
+                <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerSalidas">Registrar salida Estudiante</a></button>
+                <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerRegistrosSalas">Registrar clase Docente</a></button>
+                <button class="btnPrincipal"><a href="index.php?c=registros&a=ControllerGetRegistros">Ver registros y salidas</a></button>
+            </div>
+
 
         <div class="tabla-container">
             <table border="1">
                 <thead>
                     <tr>
-                        <th>Programa</th>
+                        <th>PROGRAMAS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,11 +42,12 @@
                     </tr>
                 </tbody>
             </table>
+<br>
 
             <table border="1">
                 <thead>
                     <tr>
-                        <th>Responsables</th>
+                        <th>RESPONSABLES </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,11 +65,11 @@
                     </tr>
                 </tbody>
             </table>
-
+            <br>
             <table border="1">
                 <thead>
                     <tr>
-                        <th>Salas</th>
+                        <th>SALAS DISPONIBLES</th>
                     </tr>
                 </thead>
                 <tbody>

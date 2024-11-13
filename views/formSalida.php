@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <fieldset>
     <form name="formSalida" id="formSalida" action="index.php?c=registros&a=ControllerValidarCodigoSalida" method="POST">
         <label>Ingrese codigo del estudiante registrado</label>
         <input type="number" name="codigoSalida" id="codigoSalida" placeholder="Ingrese codigo del estudiante">
@@ -23,6 +24,8 @@
 
         <button type="submit">Registrar Salida</button>
     </form>
+    </fieldset>
+    
 </body>
 
 <link rel="stylesheet" href="public/estilos.css">
