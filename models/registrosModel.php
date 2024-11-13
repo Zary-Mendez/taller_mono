@@ -11,6 +11,16 @@ class Ingresos
         $this->db = ConexionBase::bd();
         $this->registros = array();
     }
+    public function getResponsables()
+    {
+        $sql = "SELECT * FROM responsables";
+        $respuesta = $this->db->query($sql);
+        while ($row = $respuesta->fetch_assoc()) {
+            $this->registros[] = $row;
+        }
+        return $this->registros;
+    }
+
 
     public function getSalas()
     {
@@ -22,16 +32,7 @@ class Ingresos
         return $this->registros;
     }
 
-    public function getResponsables()
-    {
-        $sql = "SELECT * FROM responsables";
-        $respuesta = $this->db->query($sql);
-        while ($row = $respuesta->fetch_assoc()) {
-            $this->registros[] = $row;
-        }
-        return $this->registros;
-    }
-
+  
     public function getProgramas()
     {
         $sql = "SELECT * FROM programas";
@@ -41,25 +42,6 @@ class Ingresos
         }
         return $this->registros;
     }
-
-    public function getRegistros()
-    {
-        $resultado = $this->db->query("SELECT * FROM ingresos");
-        while ($row = $resultado->fetch_assoc()) {
-            $this->registros[] = $row;
-        }
-        return $this->registros;
-    }
-
-    public function getRegistrosSalas()
-    {
-        $resultado = $this->db->query("SELECT * FROM horarios_salas");
-        while ($row = $resultado->fetch_assoc()) {
-            $this->registros[] = $row;
-        }
-        return $this->registros;
-    }
-
     public function CambioSalida($codigoSalida)
     {
         $resultado = $this->db->query("UPDATE ingresos SET horaSalida = NOW() WHERE codigoEstudiante = '$codigoSalida'");
@@ -79,4 +61,23 @@ class Ingresos
     {
         $resultado = $this->db->query("UPDATE ingresos SET codigoEstudiante = '$codigoNuevo', nombreEstudiante = '$nombreNuevo' WHERE codigoEstudiante = '$codigoViejo'");
     }
+    public function getRegistros()
+    {
+        $resultado = $this->db->query("SELECT * FROM ingresos");
+        while ($row = $resultado->fetch_assoc()) {
+            $this->registros[] = $row;
+        }
+        return $this->registros;
+    }
+
+    public function getRegistrosSalas()
+    {
+        $resultado = $this->db->query("SELECT * FROM horarios_salas");
+        while ($row = $resultado->fetch_assoc()) {
+            $this->registros[] = $row;
+        }
+        return $this->registros;
+    }
+
+    
 }

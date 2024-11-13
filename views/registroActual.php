@@ -10,7 +10,7 @@
 <body>
     <H1>Registro Ingresos</H1>
 
-    <table border="1">
+    <table border="2">
         <thead>
             <tr>
                 <th>Codigo Estudiante</th>
